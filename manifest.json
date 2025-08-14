@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Helper Functions - Insider",
+  "version": "1.0.0",
+  "description": "Insider initialize olduktan sonra Helper Fonksiyonları ekler",
+  "permissions": [],
+  "icons": {
+    "256": "icons/256.png"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["Content.js"],
+    "run_at": "document_start"
+  }],
+  "web_accessible_resources": [{
+    "resources": ["inject.js"],
+    "matches": ["<all_urls>"]
+  }]
+}
