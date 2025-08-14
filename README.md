@@ -14,9 +14,9 @@ Amaç, e-ticaret sitelerinde sepet işlemlerini, fiyat parse etme işlemlerini v
 - **Metin formatlama**:
   - `window.firstLettersUpper(string)` → İlk harfleri büyük yapar, `-` karakterlerini boşluğa çevirir.
 - **Kategori & ürün bilgisi alma**:
-  - `window.getCategories()` → Insider'dan kategori listesi çeker.
-  - `window.getCurrentProduct()` → Mevcut ürünü döndürür.
-  - `window.getPaidProducts()` → Ödenmiş ürünleri döndürür.
+  - `window.getCategories()` → Kategori verisini döndürür.
+  - `window.getCurrentProduct()` → Mevcut ürün bilgisini döndürür.
+  - `window.getPaidProducts()` → Sepet sayfasında ürün listesini döndürür.
 - **Konsol bildirimi**:
   - Fonksiyonlar yüklendiğinde konsolda dikkat çekici bir mesaj gösterilir.
 
@@ -30,7 +30,7 @@ Amaç, e-ticaret sitelerinde sepet işlemlerini, fiyat parse etme işlemlerini v
 
 ## 🔑 Kullanım
 
-Uzantı aktifken, Insider initialize olduğu anda `window` objesine şu fonksiyonlar eklenir:
+Uzantı aktifken, API initialize olduğu anda `window` objesine şu fonksiyonlar eklenir:
 
 ```js
 parsePrice("₺1.299,99"); // 1299.99
