@@ -39,3 +39,5 @@ firstLettersUpper("macbook-pro"); // "Macbook Pro"
 getCategories(); // Kategori listesi döner
 getCurrentProduct(); // Ürün sayfasındaki ürün bilgisini döner
 getPaidProducts(); // Sepet sayfasındaki ürünlerin listesini döner
+setStorage(0,0,[]); // Storage günceller
+updateFromIO(); // Basket IO entegrasyonu var ise basket IO'dan storage günceller
