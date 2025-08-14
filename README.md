@@ -21,5 +21,21 @@ Amaç, e-ticaret sitelerinde sepet işlemlerini, fiyat parse etme işlemlerini v
 - **Konsol bildirimi**:
   - Fonksiyonlar yüklendiğinde konsolda dikkat çekici bir mesaj gösterilir.
 
-## 📂 Proje Yapısı
+## ⚙️ Kurulum
 
+1. **Projeyi indir** veya kopyala.
+2. Google Chrome'da `chrome://extensions/` sayfasını aç.
+3. **Geliştirici Modu**'nu aktif et.
+4. **Load unpacked** (Paketlenmemiş yükle) butonuna tıkla.
+5. Bu projenin klasörünü seç.
+
+## 🔑 Kullanım
+
+Uzantı aktifken, Insider initialize olduğu anda `window` objesine şu fonksiyonlar eklenir:
+
+```js
+parsePrice("₺1.299,99"); // 1299.99
+firstLettersUpper("macbook-pro"); // "Macbook Pro"
+getCategories(); // Kategori listesi döner
+getCurrentProduct(); // Ürün sayfasındaki ürün bilgisini döner
+getPaidProducts(); // Sepet sayfasındaki ürünlerin listesini döner
