@@ -236,7 +236,7 @@ setInterval(() => {
     }
 
     console.log(
-      "%cHi Emir, Helper Functions injected into window",
+      "%cHelper Functions injected into window",
       "color: white; background-color: red; font-size: 20px; font-weight: bold; padding: 5px; border-radius: 4px;"
     );
   }
